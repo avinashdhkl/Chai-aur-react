@@ -3,16 +3,19 @@ import { useState } from 'react';
 import './App.css'
 
 function App() {
-  const[count,setCount]=useState(15);
- 
-const AddCount=()=>{
-  if(count<20)
-        setCount(count+1);
-}
-const SubCount=()=>{
- if(count>0)
-     setCount(count-1);
-}
+  const [count, setCount] = useState(15);
+
+  const AddCount = () => {
+    if (count < 20)
+      setCount(count + 1);
+    //  setCount(prevcount=>prevcount + 1);
+    // setCount(prevcount=>prevcount + 1);
+    // setCount(prevcount=>prevcount + 1);
+  }
+  const SubCount = () => {
+    if (count > 0)
+      setCount(count - 1);
+  }
   return (
     <>
       <h1> Chai aur react</h1>
